@@ -1,0 +1,30 @@
+.todo-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-container{
+  background-color: #ccc;
+  width: 700px;
+
+  padding-top:10px;
+  padding-bottom: 40px;
+  margin-top: 50px;
+
+  color: #c44569;
+  font-size: 1.2rem;
+
+  border: none;
+  border-radius: 10px;
+}
+
+.list-box{
+  width: 700px;
+  background-color: #ccc;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+}
+

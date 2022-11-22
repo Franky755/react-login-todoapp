@@ -1,0 +1,111 @@
+.login-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container{
+  background-color: #ccc;
+  width: 800px;
+
+  padding-top:10px;
+  padding-bottom: 40px;
+  margin-top: 200px;
+
+  color: #c44569;
+  font-size: 1.2rem;
+
+  border: none;
+  border-radius: 10px;
+
+}
+
+.welcome{
+  color: #b33939;
+  margin-bottom: 20px;
+}
+
+.login-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* left-content */
+.avatar{
+
+  width: 220px;
+  height: 220px;
+
+  margin-top: 50px;
+  border-radius: 180px;
+
+  object-fit: cover;
+}
+
+/* right-content */
+.right-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.login{
+  width: 360px;
+  height: 2.8rem;
+  padding: 10px 10px;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+
+  border:none;
+  border-radius: 5px;
+  background-color:#c44569;
+
+  transition: 0.4s ease-in-out;
+}
+
+input{
+  margin-top: 10px;
+  height: 2.3rem;
+  width: 352px;
+
+  border-radius: 5px;
+
+  font-size: 1.1rem;
+}
+
+.icon{
+  margin-right:10px;
+}
+
+a, li{
+  text-decoration: none;
+  color: #3742fa;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+
+}
+
+li:hover{
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+a:hover{
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: #f5cd79;
+  border: 1px solid black;
+  color: black;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+
