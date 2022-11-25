@@ -13,6 +13,7 @@
   font-weight: 600;
   color: #3742fa;
 }
+
 /*19035350535011
 /* body */
 .todo-container {
@@ -66,11 +67,10 @@
   width: 380px;
   padding: 5px 10px;
   background-color: #f6e58d;
-
   margin-right: 95px;
 }
 
-button .fa-beat{
+button .fa-beat {
   margin-right: 10px;
   margin-left: 0px;
 }

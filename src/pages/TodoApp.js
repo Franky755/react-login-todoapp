@@ -68,7 +68,7 @@ const TodoApp = () => {
 
   const handleDeleteClick = (idPram) => {
     const list = todos.filter((a, i) => a.id !== idPram)
-    console.log(idPram)
+    // console.log(idPram)
     setTodos(list || '')
   }
 
@@ -82,7 +82,7 @@ const TodoApp = () => {
     }))
   }
 
-  console.log(searchData)
+  // console.log(searchData)
 
   return (
     <div className='todo-box'>
