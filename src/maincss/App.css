@@ -1,33 +1,26 @@
 *,
 *:after,
-*:before{
-margin:0;
-padding:0;
+*:before {
+  margin: 0;
+  padding: 0;
 }
 
 .App {
   text-align: center;
+
 }
 
 body {
-  background-image: linear-gradient(to right, #1e90ff,#ffa502);
+  background-image: linear-gradient(to right, #1e90ff, #ffa502);
 }
 
-.navi{
-  /* background-color: #ff9ff3; */
-  font-size: 1.2rem;
+.navi {
   padding-left: 100px;
   padding-top: 100px;
-
-
 }
 
-li{
+.router-url li {
+  text-decoration: none;
   list-style-type: none;
-  text-decoration: underline;
   text-align: left;
-
-  line-height: 2rem;
-
 }
-

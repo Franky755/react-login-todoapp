@@ -1,11 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
-import { createBrowserHistory, useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 import InputForm from '../components/InputForm';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faLock } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
 import '../maincss/Login.css';
 
 
@@ -13,25 +12,33 @@ const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
+  // //Save user email to local storage
+  // var userName = () => {
+  //   JSON.parse(localStorage.getItem('Email'));
+  //   return userName;
+  // }
+
   const handleChangeEmail = (event) => {
     setEmail(event.target.value)
   }
 
   const handleChangePassword = (event) => {
-    setPassword(event.target.password)
+    setPassword(event.target.value)
   }
 
   const history = useHistory();
 
   const handleOnSubmit = (event) => {
     if (email.length === 0) {
-      alert("Please input your email! >_< ");
+      alert("Please input your email! >_< ")
     }
-    else if (password.length < 3) {
-      alert("Password must be more than 3 digits >>__<< ");
+    else if (password.length === 0) {
+      alert("Please input your password! >_< ")
     }
     else {
-      history.push('/todoapp');//redirect to TodoApp
+      localStorage.setItem('Email', email);
+      localStorage.setItem('Password', password);
+      history.push('/todoapp')//redirect to TodoApp
     }
   }
 
@@ -50,7 +57,7 @@ const Login = () => {
               value={email}
               type="text"
               icon={<FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>}
-              label="Email "
+              label="Email/Username"
               placeholder="Type your email"
               onChange={handleChangeEmail}
               required
@@ -63,14 +70,14 @@ const Login = () => {
               icon={<FontAwesomeIcon icon={faLock}></FontAwesomeIcon>}
               label="Password "
               placeholder="Type your password"
-              onChange={handleChangePassword}
+              onChange={(e) => handleChangePassword(e)}
               required
             />
             <br />
             <button className="login" onClick={handleOnSubmit}>Login</button>
             <br />
             <span className="link-signup">
-              Create a new account click <a href=''>Sign Up</a></span>
+              Create a new account click <Link to='/signup'>Sign Up</Link></span>
             <span>
               <a href="">Forgot Email </a>/<a href=""> Password?</a>
             </span>

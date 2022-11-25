@@ -1,14 +1,14 @@
-.login-box{
+.login-box {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.login-container{
+.login-container {
   background-color: #ccc;
   width: 800px;
 
-  padding-top:10px;
+  padding-top: 10px;
   padding-bottom: 40px;
   margin-top: 200px;
 
@@ -20,19 +20,20 @@
 
 }
 
-.welcome{
+.welcome {
   color: #b33939;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.login-wrapper{
+.login-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
 /* left-content */
-.avatar{
+.avatar {
 
   width: 220px;
   height: 220px;
@@ -44,14 +45,14 @@
 }
 
 /* right-content */
-.right-content{
+.right-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
 }
 
-.login{
+.login {
   width: 360px;
   height: 2.8rem;
   padding: 10px 10px;
@@ -60,28 +61,32 @@
   font-weight: 700;
   color: #fff;
 
-  border:none;
+  border: none;
   border-radius: 5px;
-  background-color:#c44569;
+  background-color: #c44569;
 
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-input{
+input {
   margin-top: 10px;
   height: 2.3rem;
   width: 352px;
 
+  padding: 0px 10px;
+
   border-radius: 5px;
 
   font-size: 1.1rem;
+  border: none;
 }
 
-.icon{
-  margin-right:10px;
+.icon {
+  margin-right: 10px;
 }
 
-a, li{
+a,
+li {
   text-decoration: none;
   color: #3742fa;
   font-weight: 400;
@@ -89,23 +94,18 @@ a, li{
 
 }
 
-li:hover{
+li:hover {
   cursor: pointer;
   font-size: 1.5rem;
 }
 
-a:hover{
+a:hover {
   cursor: pointer;
   font-weight: 700;
+  text-decoration: underline;
 }
 
-button:hover{
-  cursor: pointer;
-  background-color: #f5cd79;
-  border: 1px solid black;
-  color: black;
-  font-weight: 700;
-  font-size: 1.4rem;
+.login:hover {
+  background-color: #c23616;
+  font-size: 1rem;
 }
-
-

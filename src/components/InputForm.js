@@ -17,8 +17,8 @@ const InputForm = (props) => {
         required={props.required}
         confirmpassword={props.confirmpassword}
         autoFocus={props.autoFocus}
-
-        />
+        icon={props.icon}
+      />
     </div>
   )
 }
