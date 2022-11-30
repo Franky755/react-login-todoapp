@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Routes, Route, Link, Switch } from 'react-router-dom';
+import React from 'react';
+import { Route, Link, Switch } from 'react-router-dom';
 import Login from './pages/Login';
-import TodoApp from './pages/TodoApp';
+import TodosApp from './pages/TodosApp';
 import SignUp from './pages/SignUp';
-import '../src/maincss/App.css';
+import '../src/css/App.css';
 
 function App() {
 
@@ -12,15 +12,15 @@ function App() {
       <div className="App">
         <div className='navi'>
           <nav className='router-url'>
-            <ul>
-              <li>
+            <ul className='router-url-ul'>
+              <li className='router-url-li'>
                 <Link to="/">Login</Link>
               </li>
-              <li>
-                <Link to="/todoapp">TodoApp</Link>
+              <li className='router-url-li'>
+                <Link to="/todosapp">Todos App</Link>
               </li>
-              <li>
-                <Link to="/signup">SignUp</Link>
+              <li className='router-url-li'>
+                <Link to="/signup">Sign Up</Link>
               </li>
             </ul>
           </nav>
@@ -29,8 +29,8 @@ function App() {
           <Route exact path='/' >
             <Login />
           </Route>
-          <Route exact path='/todoapp' >
-            <TodoApp />
+          <Route exact path='/todosapp' >
+            <TodosApp />
           </Route>
           <Route exact path='/signup' >
             <SignUp />

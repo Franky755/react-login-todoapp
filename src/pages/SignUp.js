@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useHistory, Link } from "react-router-dom";
-import '../maincss/SignUp.css';
+import { useHistory } from "react-router-dom";
+import '../css/SignUp.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
@@ -42,7 +42,7 @@ function SignUpForm({ setIsOpenModal }) {
 
 
   return (
-    <div className='container'>
+    <div className='sign-up-container'>
       <div className="form">
         <div className="left-content">
           <img className='avatar' src="http://media.vov.vn/sites/default/files/styles/large/public/2022-08/anh-nen-avatar-dep_652403.jpg"

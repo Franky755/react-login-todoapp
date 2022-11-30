@@ -5,7 +5,7 @@ import { useHistory, Link } from "react-router-dom";
 import InputForm from '../components/InputForm';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
-import '../maincss/Login.css';
+import '../css/Login.css';
 
 
 const Login = () => {
@@ -38,7 +38,7 @@ const Login = () => {
     else {
       localStorage.setItem('Email', email);
       localStorage.setItem('Password', password);
-      history.push('/todoapp')//redirect to TodoApp
+      history.push('/todosapp')//redirect to TodosApp
     }
   }
 

@@ -1,0 +1,56 @@
+.todos-app-container {
+  background-color: #ccc;
+  width: 66%;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: #c44569;
+  padding-top: 40px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  border-radius: 10px;
+}
+
+body {
+  background-image: linear-gradient(to right, #1e90ff, #ffa502);
+}
+
+/* common style button, a, li, */
+.btn {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  border: 1px solid black;
+  color: black;
+  font-weight: 700;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+.head-title {
+  font-size: 3rem;
+}
+
+.split-line {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #000;
+  width: 100%;
+}
+
+.welcome-user{
+  margin-top: 20px;
+}
+.user-name{
+  font-weight: 700;
+  cursor: pointer;
+}

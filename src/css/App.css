@@ -19,8 +19,13 @@ body {
   padding-top: 100px;
 }
 
-.router-url li {
+.router-url{
   text-decoration: none;
   list-style-type: none;
   text-align: left;
+  font-weight: 700;
+}
+
+.router-url-li{
+  font-weight: 700;
 }
