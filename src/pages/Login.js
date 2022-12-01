@@ -12,12 +12,6 @@ const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  // //Save user email to local storage
-  // var userName = () => {
-  //   JSON.parse(localStorage.getItem('Email'));
-  //   return userName;
-  // }
-
   const handleChangeEmail = (event) => {
     setEmail(event.target.value)
   }

@@ -29,6 +29,8 @@ const TodosApp = () => {
 		setSearchData(searchList.filter(x => x.title?.includes(searchText)))
 	}
 
+
+
 	const handleFilterTotal = () => {
 		setSearchData(searchList)
 	}
@@ -41,7 +43,6 @@ const TodosApp = () => {
 		setSearchData(searchList.filter((todo) => todo.completed === false))
 	}
 
-
 	return (
 		<div className='todos-app-container'>
 			<h1 className='head-title'>My Todo List</h1>
@@ -52,7 +53,7 @@ const TodosApp = () => {
 				handleSearching={handleSearching}
 				setSearchText={setSearchText}
 				searchText={searchText}
-
+				searchData={searchData}
 			/>
 			<TodosSummary
 				handleFilterCompleted={handleFilterCompleted}

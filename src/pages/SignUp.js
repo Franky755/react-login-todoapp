@@ -80,12 +80,14 @@ function SignUpForm({ setIsOpenModal }) {
             placeholder="Confirm the password"
             confirmpassword=""
             onChange={handleConfirmPassword}
-            required />
-
+            required
+          />
           <br />
           <button className="login" onClick={handleOnSubmit}>Sign Up</button>
           <br />
-          <a className='forgot-email' href="">Forgot Username/</a> <a className='forgot-email' href=""> Password?</a>
+          <div className='a-group'>
+            <span><a className='forgot-email' href="">Forgot Username</a> /<a className='forgot-email' href=""> Password?</a></span>
+          </div>
         </div>
       </div>
     </div>

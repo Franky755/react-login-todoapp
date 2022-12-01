@@ -12,7 +12,10 @@ const AddTodoForm = () => {
 
 	const onSubmit = (event) => {
 		event.preventDefault();
-		if (value) {
+		if (value.length === 0) {
+			alert('Please input the content!');
+		}
+		else if (value) {
 			dispatch(
 				addTodoAsync({
 					title: value,
@@ -35,7 +38,8 @@ const AddTodoForm = () => {
 				onChange={(event) => setValue(event.target.value)}
 				title='Input the things you are planning to do'
 				autoFocus
-			></input>
+			>
+			</input>
 
 			<button
 				type='submit'
